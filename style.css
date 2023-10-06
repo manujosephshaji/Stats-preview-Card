@@ -1,0 +1,113 @@
+body{
+    margin: 0%;
+    background-color:  hsl(233, 47%, 7%);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 150px;
+    border-radius: 15px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr;
+    justify-content: center;
+    align-items: center;
+    width: 70% ;
+    background-color:hsl(244, 38%, 16%);
+    border-radius: 15px;
+}
+.head-section{
+    display: flex;
+    justify-content: center;
+    margin-top: -237px;
+}
+.headline{
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.paragraph-section{
+    display: flex;
+    justify-content: center;
+    grid-column: 1;
+    margin-left: 30px;
+    margin-top: -415px;
+}
+.para-1{
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+}
+.features{
+    display: flex;
+    grid-column: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -185px;
+}
+.f1{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+    margin: 16px;
+    text-align: center;
+}
+.f1 ,h2,p{
+    margin: 0%;
+}
+.image-seciton{
+    grid-column: 2;
+    grid-row: 1/4;
+    background-color:  hsl(277, 64%, 61%);
+    border-radius: 15px;
+}
+.image{
+    object-fit: contain;
+    width: 30rem;
+    margin-left: 1px;
+    border-radius: 0px 15px 15px 0px;
+    opacity: 0.7;
+}
+.image-seciton .image{
+    display: block;
+}
+
+/********Mobile-Screen**********/
+
+@media (min-width:390px) and (max-width:844px){
+
+   .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr ;
+    width: 369px;
+  }
+   .image-seciton{
+    grid-column: 1/2;
+    grid-row: 1/2;
+   }
+   .image{
+    width: 23rem;
+    border-radius: 15px 15px 0px 0px;
+   }
+   .headline{
+      text-align: center;
+   }
+   .para-1{
+    text-align: center;
+    margin-right: 25px;
+   }
+   .features{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -127px;
+   }
+   .f1{
+    margin: 4%;
+   }
+   
+}
